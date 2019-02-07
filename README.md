@@ -22,7 +22,7 @@
 - belongs_to :group
 - belongs_to :user
 
-##usersテーブル
+## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
@@ -34,7 +34,7 @@
 - has_many :members
 - has_many :messages
 
-##groupテーブル
+## groupテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|

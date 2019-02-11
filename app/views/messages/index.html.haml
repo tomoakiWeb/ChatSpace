@@ -23,8 +23,10 @@
   .submit_box
     .submit_form
       %input{:name => " message", :size => "50" ,:placeholder => "type a message"}
-      = link_to root_path do
+      %label.input_label
         %i.fa.fa-image
+        %input.icon{type: "file", style: "display:none;"}
+
       = link_to root_path do
         %p.send_buttom Send
 

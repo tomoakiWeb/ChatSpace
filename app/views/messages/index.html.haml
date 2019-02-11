@@ -1,0 +1,31 @@
+.fash-header チャットグループが作成されました。
+.left-wrapper
+  .left-header
+    %h3.name sample
+    %ul
+      = link_to root_path do
+        %i.fa.fa-pencil-square-o
+      = link_to root_path do
+        %i.fa.fa-cog
+  .groups
+    = render "left-group"
+
+
+.message_wrapper
+  .main_header
+    .group_content
+      %h2 sample
+      %p.member Members: name
+    = link_to root_path do
+      %p.header_buttom Edit
+  .chat_space
+    = render "chat_content"
+  .submit_box
+    .submit_form
+      %input{:name => " message", :size => "50" ,:placeholder => "type a message"}
+      = link_to root_path do
+        %i.fa.fa-image
+      = link_to root_path do
+        %p.send_buttom Send
+
+

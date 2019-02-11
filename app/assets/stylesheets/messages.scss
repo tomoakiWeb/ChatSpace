@@ -148,21 +148,24 @@ body {
           display: inline-block;
           width: 80%;
         }
-        i {
-          font-size: 15px;
-          position: relative;
-          right: 30px;
-          display: inline-block;
-          color: black;
-           text-decoration: none;
-        }
-        input::placeholder {
-          font-size:16px;
-        }
+          i {
+            font-size: 15px;
+            position: relative;
+            right: 30px;
+            display: inline-block;
+            color: black;
+            text-decoration: none;
+          }
+          .icon {
 
-        a {
-          text-decoration: none;
-        }
+          }
+
+          input::placeholder {
+            font-size:16px;
+          }
+          a {
+            text-decoration: none;
+          }
         .send_buttom {
           line-height: 50px;
           color: white;

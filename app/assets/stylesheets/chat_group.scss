@@ -1,0 +1,18 @@
+.groups {
+    height: calc(100vh - 100px);
+    background-color: #2f3e51;
+
+    .group {
+      height: 80px;
+      width: 300px;
+
+      .group_name {
+        font-size: 15px;
+        padding:20px 0 5px 20px;
+      }
+      .reccent_message {
+        font-size:11px;
+        padding-left: 20px;
+      }
+    }
+  }

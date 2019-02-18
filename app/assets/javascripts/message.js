@@ -15,7 +15,8 @@
                   <p class = 'lower-message__content'>
                     ${message.content}
                   </p>`
-            return html;
+  let image = message.image? `<img src="${ message.image }" alt="">` : ``
+  html += image + `</div></div>`
     message_list.prepend(html);
  };
 

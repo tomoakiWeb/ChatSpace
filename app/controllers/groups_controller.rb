@@ -1,5 +1,7 @@
 class GroupsController < ApplicationController
 
+  before_action :set_tweet, only: [:edit, :update]
+
   def index
   end
 
@@ -18,7 +20,6 @@ class GroupsController < ApplicationController
   end
 
   def update
-    @group = Group.find(params[:id])
     if @group.update(group_params)
       redirect_to root_path, notice: "グループを更新しました"
     else
@@ -27,7 +28,6 @@ class GroupsController < ApplicationController
   end
 
   def edit
-   @group = Group.find(params[:id])
   end
 
   private

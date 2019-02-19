@@ -24,7 +24,6 @@ $(function() {
         dataType: 'json'
       })
       .done(function(users) {
-        console.log(users);
         $('.chat-group-user.clearfix').empty();
         if (users.length !== 0) {
           users.forEach(function(user) {

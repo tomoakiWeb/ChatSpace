@@ -2,7 +2,7 @@ $(document).on('turbolinks:load', function() {
   function buildHTML(message) {
     var message_list = $('.messages');
     if (message.image){
-    var image = `<img src="${ message.image }">`;
+    var image = `<img src="${ message.image }" class = "lower-message__image">`;
     } else {
     var image =''
     }
@@ -41,10 +41,8 @@ $(document).on('turbolinks:load', function() {
         })
         .done(function(json) {
           var id = $('.message').data('messageId');
-          var insertHTML = '';
           json.messages.forEach(function(message){
-            insertHTML += buildHTML(message);
-          $('.messages').append(insertHTML);
+          buildHTML(message);
           })
         })
         .fail(function(data) {

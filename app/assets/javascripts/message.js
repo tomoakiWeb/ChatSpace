@@ -2,7 +2,7 @@ $(document).on('turbolinks:load', function() {
   function appendMessage(message) {
     var message_list = $('.messages');
     if (message.image){
-      var image = `<img src="${ message.image } class: 'lower-message__image' ">`;
+      var image = `<img src="${ message.image } " class = "lower-message__image">`;
     } else {
       var image = ''
     }

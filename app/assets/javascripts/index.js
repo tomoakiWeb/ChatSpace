@@ -1,15 +1,12 @@
 $(document).on('turbolinks:load', function() {
-$(function(){
-  function appendMessage(message) {
+  function buildHTML(message) {
     var message_list = $('.messages');
-    console.log(message.image);
     if (message.image){
     var image = `<img src="${ message.image }">`;
     } else {
     var image =''
     }
 
-    // var image = message.image  ?  `<img src="${message.image}">`: "" ;
     var html =
   `<div class = "message" data-message-id="${message.id}">
   <div class='upper-message'>
@@ -51,11 +48,10 @@ $(function(){
           })
         })
         .fail(function(data) {
-          console.log('自動更新に失敗しました');
+          alert('自動更新に失敗しました');
         })
       } else {
           clearInterval(interval);
         }},5000 );
-  });
 });
 

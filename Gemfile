@@ -45,6 +45,12 @@ group :development, :test do
   gem 'faker'
   gem 'pry-byebug'
   gem 'pry-doc'
+  gem 'capistrano'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano3-unicorn'
+e
 end
 
 group :development do

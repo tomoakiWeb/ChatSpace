@@ -5,6 +5,7 @@ require 'rails/all'
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
+I18n.config.available_locales = :ja
 I18n.default_locale = :ja
 
 module ChatSpace

@@ -2,7 +2,7 @@
 lock "~> 3.11.0"
 
 set :application, "ChatSpace"
-set :repo_url, "git@example.com:tomoakimiura/ChatSpace.git"
+set :repo_url, "git@github.com:tomoakimiura/ChatSpace.git"
 
 
 # config valid only for current version of Capistrano
